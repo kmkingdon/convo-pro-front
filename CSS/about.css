@@ -11,6 +11,7 @@ body {
   display: grid;
   grid-template-columns: 1rem 32% 32% 32% 1rem;
   grid-template-rows: 1rem 25% 25% 25% 25% 1rem;
+  overflow: hidden;
 }
 
 header {
