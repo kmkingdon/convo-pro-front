@@ -177,6 +177,11 @@ main h1 {
   cursor: pointer;
 }
 
+#save img:active {
+  cursor: wait;
+}
+
+
 .enhanced {
   width: 60%;
   height: 100%;
@@ -469,6 +474,7 @@ main h1 {
       grid-row: 2/end;
       align-self: center;
       justify-self: center;
+      margin-bottom: 4rem;
     }
 
     #question {
@@ -479,8 +485,8 @@ main h1 {
       width: 100%;
       grid-column: 3/end;
       grid-row: 2/end;
-      justify-content: flex-start;
-      margin-top: 2rem;
+      justify-content: center;
+      margin-bottom: 4rem;
     }
 
     .enhanced h2 {
@@ -555,7 +561,8 @@ main h1 {
       grid-column: 2/end;
       grid-row: 4/5;
       align-self: center;
-      justify-self: center;
+      justify-self: flex-end;
+      margin-right: 4rem;
     }
 
     .saved-settings h5{
