@@ -25,7 +25,7 @@ function saveSettings(event) {
   let nsfwNode= document.createTextNode(nsfw);
   nsfwLevel.appendChild(nsfwNode);
   let startConversating= document.createElement('img');
-  startConversating.src= "assets/advancedConversating.png";
+  startConversating.src= "assets/advancedconversating.png";
   startConversating.id += "start-advanced-img";
   startConversating.addEventListener('click', displayStart);
   startAdvanced.appendChild(startConversating)
@@ -130,7 +130,6 @@ function availableIdGenerator(response) {
   for (var i = 0; i < array2.length; i++) {
     availableIds.push(array2[i].id);
   }
-  console.log(availableIds);
 }
 
 
@@ -163,19 +162,15 @@ function mergeData(questions) {
 function questionGenerator(mergedArray){
   let newQuestion;
   let index;
-  let familyArray= [];
+
 
   let id= availableIds[Math.floor(Math.random() * (availableIds.length))];
 
-  for (var i = 0; i < mergedArray.length; i++) {
-    if(mergedArray[i].familyFriendly === true) {
-      familyArray.push(mergedArray[i]);
-    }
-  }
 
-  for (var i = 0; i < familyArray.length; i++) {
-    if(familyArray[i].id === id) {
-      newQuestion = familyArray[i].question;
+
+  for (var i = 0; i < mergedArray.length; i++) {
+    if(mergedArray[i].id === id) {
+      newQuestion = mergedArray[i].question;
       let index = availableIds.indexOf(id);
       availableIds.splice(index, 1);
     }
