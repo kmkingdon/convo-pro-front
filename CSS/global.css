@@ -424,7 +424,7 @@ main h1 {
     #logo {
       grid-column: 2/3;
       grid-row: 2/3;
-      width: 40%;
+      width: 30%;
     }
 
     header nav {
@@ -506,6 +506,10 @@ main h1 {
       height: 85%;
     }
 
+    .favorites {
+      margin-top: 3rem;
+    }
+
     .form form {
       grid-column: 1/3;
       grid-row: 1/end;
@@ -530,6 +534,10 @@ main h1 {
 
     #sub-label {
       font-size: 1rem;
+    }
+
+    .form label {
+      font-size: 1.5rem;
     }
 
     .form select {
@@ -584,6 +592,10 @@ main h1 {
 
     .form-suggest h3 {
       display: none;
+    }
+
+    .form-suggest label {
+      font-size: 1.5rem;
     }
 
     .form-suggest textarea {
