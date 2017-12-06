@@ -409,6 +409,11 @@ main h1 {
   margin-top: 1rem;
 }
 
+#google-search input {
+  font-size: 2rem;
+  border: solid black 3px;
+}
+
 
 @media only screen and (min-width: 1025px) {
     body{
@@ -587,6 +592,10 @@ main h1 {
 
     .form-suggest input {
       margin-top: .5rem;
+    }
+
+    #google-search input {
+      font-size: 1rem;
     }
 
     .hidden {

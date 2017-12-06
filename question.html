@@ -28,18 +28,9 @@
         <div class="enhanced">
           <h2>Enhanced Conversating:</h2>
           <img id="google" src="assets/google.png" alt="google">
-          <script>
-            (function() {
-              var cx = '010148994692453489500:wu8sgg3jzeo';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search class="search"></gcse:search>
+          <form id="google-search" method="get" action="https://www.google.com/search">
+          <input type="text" name="q" size="31" value="" placeholder="Search Here">
+          </form>
         </div>
       </div>
       <div class="bottom-buttons">
