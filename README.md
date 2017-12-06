@@ -26,4 +26,7 @@ Build a client that reads and writes data from your API.
 
 ### Submission
 
-Add a link to your front-end code [here](#), your back-end code [here](#), and your deployed site [here](#).
+Add a link to your front-end code https://github.com/kmkingdon/galvanize-web-app,
+your back-end code https://github.com/kmkingdon/convo-pro-server,
+and your deployed site
+https://convo-pro.firebaseapp.com

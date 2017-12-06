@@ -9,8 +9,9 @@ body {
   width: 100vw;
   background-color: hsl(0, 0%, 100%);
   display: grid;
-  grid-template-columns: 1rem 32% 32% 32% 1rem;
-  grid-template-rows: 1rem 23% 23% 23% 23% 1rem;
+  grid-template-columns: 2vw 32vw 32vw 32vw 2vw;
+  grid-template-rows: 2vh 24vh 24vh 24vh 24vh 2vh;
+  overflow: hidden;
 }
 
 header {
@@ -87,7 +88,6 @@ main {
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 2rem;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 25% 25% 25% 15%;
@@ -149,7 +149,7 @@ main h1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -404,8 +404,9 @@ main h1 {
   display:none;
 }
 
-.enhanced {
-  width: 60%;
+#response {
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 
@@ -435,12 +436,12 @@ main h1 {
     }
     main h1 {
       padding-bottom: 0rem;
-      padding-top: 1.5rem;
+      padding-top: 2.5rem;
     }
 
     #top-nav{
       padding-bottom: 0rem;
-      padding-top: 1.5rem;
+      padding-top: 2.5rem;
     }
     .main-question-area, .advanced-question-area, .form {
       display: grid;

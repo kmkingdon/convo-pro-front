@@ -7,11 +7,12 @@ const advancedQuestionDiv= document.getElementsByClassName('advanced-question-ar
 const intimacyLevel= document.getElementById('intimacy');
 const nsfwLevel= document.getElementById('nsfw');
 const startAdvanced= document.getElementsByClassName('start-advanced')[0];
+startAdvanced.innerHTML= "";
 const changeSettings= document.getElementById('change-settings');
-let intimacy;
-let nsfw;
 const saveSettingsButton= document.querySelector('form');
 const save= document.getElementById('save');
+let intimacy;
+let nsfw;
 let availableIds= [];
 
 saveSettingsButton.addEventListener('submit', saveSettings);
@@ -20,15 +21,21 @@ function saveSettings(event) {
   event.preventDefault();
   intimacy = event.target[0].value;
   let intimacyNode= document.createTextNode(intimacy);
-  intimacyLevel.appendChild(intimacyNode);
+  if(intimacyLevel.innerHTML === "") {
+    intimacyLevel.appendChild(intimacyNode);
+  }
   nsfw= event.target[1].value;
   let nsfwNode= document.createTextNode(nsfw);
-  nsfwLevel.appendChild(nsfwNode);
+  if(nsfwLevel.innerHTML === "") {
+    nsfwLevel.appendChild(nsfwNode);
+  }
   let startConversating= document.createElement('img');
   startConversating.src= "assets/advancedconversating.png";
   startConversating.id += "start-advanced-img";
   startConversating.addEventListener('click', displayStart);
-  startAdvanced.appendChild(startConversating)
+  if(startAdvanced.hasChildNodes() === false) {
+    startAdvanced.appendChild(startConversating)
+  }
 }
 
 function displayStart() {
