@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ConvoPro Question Generator</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/global.css">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="assets/convopro-logo.png" alt="convopro logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Advanced Conversating</h1>
+      <a id="top-nav" href="question.html">Quick Conversating</a>
+      <div class="form">
+        <h3>Set Advanced Settings:</h3>
+        <form class="advanced" action="#">
+          <label for="intimacy">Intimacy Level</label>
+          <label id="sub-label"for="intimacy">1--> Less Intimate to 4--> Most Intimate</label>
+          <select name="intimacy">
+            <option value="">Select an Intimacy Level</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="All">All</option>
+          </select>
+
+          <label for="nsfw">Naughty or Nice</label>
+          <select name="nsfw">
+            <option value="">Select Naughty or Nice</option>
+            <option value="Naughty">All Naughty</option>
+            <option value="Nice">All Nice</option>
+            <option value="Both">A Little Bit of Both</option>
+          </select>
+          <input type="submit" name="submit" value="Save Settings">
+        </form>
+        <div class="start-advanced">
+        </div>
+      </div>
+
+      <div class="advanced-question-area hidden">
+        <button id="start" type="button" name="start">Start Conversating</button>
+        <div class="question-section">
+          <p id="question"></p>
+          <p id="save"></p>
+        </div>
+        <div class="enhanced">
+          <h2>Enhanced Conversating:</h2>
+          <img id="google" src="assets/google.png" alt="google">
+          <script>
+            (function() {
+              var cx = '010148994692453489500:wu8sgg3jzeo';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search class="search"></gcse:search>
+        </div>
+      </div>
+
+      <div class="saved-settings">
+        <h5>Saved Settings: <span id="change-settings">Change Settings</span></h5>
+        <p>Intimacy Level: <span id="intimacy"></span>   Naughty/Nice: <span id="nsfw"></span></p>
+      </div>
+      <div class="bottom-buttons">
+        <div id="favorite">
+          <a href="favorite.html">Favorite List</a>
+        </div>
+        <div id="suggest">
+          <a href="suggest.html">Suggest a Question</a>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src= "JS/advanced.js"></script>
+  </body>
+</html>

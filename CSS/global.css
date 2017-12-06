@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1rem 32% 32% 32% 1rem;
+  grid-template-rows: 1rem 23% 23% 23% 23% 1rem;
+}
+
+header {
+  background-color: hsl(177,100%,45%);
+  grid-column: 1/end;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 60%;
+  max-height: 85%;
+}
+
+header nav {
+  width: 35%;
+  height: 65%;
+  margin-right: 2rem;
+  border-radius: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsl(177,100%,45%);
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Cabin Sketch', cursive;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+nav li {
+  border: solid hsl(0, 0%, 0%) 3px;
+  background-color: hsl(0,0%,100%);
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-top: 4rem;
+}
+
+main {
+  grid-column: 1/end;
+  grid-row: 3/end;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  background-image: url("../assets/filefolders.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 25% 25% 25% 15%;
+}
+
+main h1 {
+  font-size: 2.1rem;
+  font-family: 'Cabin Sketch', cursive;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 2.3rem;
+}
+
+#top-nav{
+  font-size: 2.1rem;
+  font-family: 'Cabin Sketch', cursive;
+  grid-column: 2/end;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 2.3rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+}
+
+.main-question-area, .advanced-question-area {
+  grid-column: 1/end;
+  grid-row: 2/5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#start {
+  font-size: 4rem;
+  font-family: 'Cabin Sketch', cursive;
+  background-color: hsl(177,100%,45%);
+  border: solid black 3px;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  border-radius: 20%;
+  color: hsl(0,0%,100%);
+  height: 22%;
+  width: 65%;
+}
+
+.question-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+#question {
+  font-size: 4.5rem;
+  font-family: serif;
+  width: 60%;
+  padding-left: 4rem;
+  text-align: center;
+}
+
+#save {
+  width: 30%;
+  height: 30%;
+  margin-top: 2rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#save img {
+  width: 100%;
+  height: 120%;
+  cursor: pointer;
+}
+
+.enhanced {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.enhanced h2 {
+  font-size: 3rem;
+  font-family: 'Cabin Sketch', cursive;
+  color: hsl(177,100%,45%);
+}
+
+#enhanced{
+  background-color: hsl(177,100%,45%);
+  color: hsl(0,0%,100%);
+  font-size: 2rem;
+  border: solid black 3px;
+  font-family: 'Cabin Sketch', cursive;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  width: 40%;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 20%;
+}
+
+.bottom-buttons {
+  grid-column: 1/end;
+  grid-row: 5/end;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-buttons div {
+  background-color: hsl(177,100%,45%);
+  border: solid black 3px;
+  width: 40%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20%;
+  margin-bottom: 2rem;
+}
+
+#favorite {
+  margin-left: 4rem;
+}
+
+#suggest {
+  margin-right: 4rem;
+}
+
+.bottom-buttons a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: 'Cabin Sketch', cursive;
+  text-align: center;
+  color: hsl(0,0%,100%);
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.form, .favorites, .form-suggest {
+  grid-column: 1/end;
+  grid-row: 2/5;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form h3, .favorites h3 , .form-suggest h3{
+  font-size: 4rem;
+  font-family: 'Cabin Sketch', cursive;
+  margin-bottom: 4rem;
+}
+
+.form form , .form-suggest form{
+  width: 65%;
+  font-size: 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+
+.form label, .form-suggest label{
+  margin: 1rem 0rem;
+}
+
+#sub-label {
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+
+.form select {
+  width: 100;
+  font-size: 2.3rem;
+  background-color: hsl(177,100%,45%);
+  border: solid black 3px;
+  padding: 1rem;
+  color: hsl(0,0%,100%);
+}
+
+.form input , .form-suggest input{
+  font-size: 3rem;
+  font-family: 'Cabin Sketch', cursive;
+  text-align: center;
+  color: hsl(0,0%,100%);
+  background-color: hsl(177,100%,45%);
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  border: solid black 3px;
+  border-radius: 20%;
+  margin-top: 5rem;
+}
+
+.form-suggest textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 2.3rem;
+  border: solid black 3px;
+}
+
+.saved-settings {
+  grid-column: 1/end;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.saved-settings h5{
+  font-size: 3rem;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.saved-settings p {
+  font-size: 2rem;
+  font-style: bold;
+}
+
+#change-settings {
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-style: italic;
+  font-family: serif;
+  color: blue;
+}
+
+.start-advanced {
+  grid-column: 1/end;
+  grid-row: 4/5;
+  align-self: center;
+  justify-self: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#start-advanced-img {
+  width: 60%;
+}
+
+.favorites-list {
+  width: 80%;
+  height: 70%;
+  background-color: hsl(177,100%,45%);
+  border: solid black 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: scroll;
+}
+
+.favorites-list li {
+  font-size: 3rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+}
+
+.remove {
+  font-size: 2rem;
+  color: blue;
+  font-style: italic;
+}
+
+#reset {
+  background-color: hsl(177,100%,45%);
+  color: hsl(0,0%,100%);
+  font-size: 2rem;
+  border: solid black 3px;
+  width: 40%;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 20%;
+}
+
+#google {
+  width: 6rem;
+}
+
+.hidden {
+  display:none;
+}
+
+.enhanced {
+  width: 60%;
+}
+
+
+@media only screen and (min-width: 1025px) {
+    body{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #logo {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      width: 40%;
+    }
+
+    header nav {
+      height: 60%;
+    }
+
+    nav li {
+      margin-top: 0rem;
+    }
+
+    main {
+      background-size: cover;
+      margin-top: 0rem;
+    }
+    main h1 {
+      padding-bottom: 0rem;
+      padding-top: 1.5rem;
+    }
+
+    #top-nav{
+      padding-bottom: 0rem;
+      padding-top: 1.5rem;
+    }
+    .main-question-area, .advanced-question-area, .form {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 30% 70%;
+    }
+
+    #start {
+      grid-column: 1/end;
+      grid-row: 1/2;
+      align-self: end;
+      justify-self: center;
+      width: 40%;
+      height: 60%;
+      font-size: 2rem;
+    }
+
+    .question-section {
+      grid-column: 1/3;
+      grid-row: 2/end;
+      align-self: center;
+      justify-self: center;
+    }
+
+    #question {
+      font-size: 3rem;
+    }
+
+    .enhanced {
+      width: 100%;
+      grid-column: 3/end;
+      grid-row: 2/end;
+      justify-content: flex-start;
+      margin-top: 2rem;
+    }
+
+    .enhanced h2 {
+      font-size: 2rem;
+    }
+
+    #enhanced{
+      font-size: 1.5rem;
+      width: 50%;
+    }
+
+    .bottom-buttons div {
+      width: 30%;
+    }
+
+    .bottom-buttons a {
+      font-size: 2rem;
+    }
+
+    .form, .favorites {
+      grid-row: 2/5;
+      margin-top: 2rem;
+      height: 85%;
+    }
+
+    .form form {
+      grid-column: 1/3;
+      grid-row: 1/end;
+      align-self: center;
+      justify-self: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+
+
+    .form h3, .favorites h3 {
+      font-size: 2.5rem;
+      margin-bottom: 0rem;
+    }
+
+    .form h3 {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      align-self: center;
+      justify-self: center;
+    }
+
+    #sub-label {
+      font-size: 1rem;
+    }
+
+    .form select {
+      font-size: 1rem;
+      height: 3rem;
+    }
+
+    .form input {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      width: 50%;
+    }
+
+    .saved-settings {
+      grid-column: 2/end;
+      grid-row: 4/5;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .saved-settings h5{
+      font-size: 2rem;
+    }
+
+    .saved-settings p {
+      font-size: 1rem;
+    }
+
+    #change-settings {
+      font-size: 1rem;
+    }
+
+    .start-advanced {
+      grid-column: 3/end;
+      grid-row: 2/end;
+      align-self: start;
+      justify-self: center;
+    }
+
+    #start-advanced-img {
+      width: 100%;
+    }
+
+    .favorites-list li {
+      font-size: 1.5rem;
+    }
+
+    .remove {
+      margin-left: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .form-suggest h3 {
+      display: none;
+    }
+
+    .form-suggest textarea {
+      font-size: 1.5rem;
+    }
+
+    .form-suggest input {
+      margin-top: .5rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+}
