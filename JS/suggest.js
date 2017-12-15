@@ -1,8 +1,7 @@
 const postURL= "https://convo-pro-server.herokuapp.com/suggestions";
 const form= document.querySelector('form');
 const responseShow= document.getElementById('response');
-console.log(form);
-
+const textArea= document.querySelector('textarea');
 form.addEventListener('submit', postForm);
 
 function  postForm(event) {
@@ -11,7 +10,8 @@ function  postForm(event) {
   const submission= {
           "question": newSubmission.get("suggestion"),
         }
-    sendPost(submission);
+  textArea.value = "";
+  sendPost(submission);
 };
 
 function sendPost(submission){
