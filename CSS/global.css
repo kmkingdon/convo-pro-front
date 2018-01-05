@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
-
 * {
   box-sizing: border-box;
 }
@@ -15,7 +14,7 @@ body {
 }
 
 header {
-  background-color: hsl(177,100%,45%);
+  background-color: hsl(177, 100%, 45%);
   grid-column: 1/end;
   grid-row: 1/3;
   align-self: center;
@@ -42,15 +41,11 @@ header nav {
 
 nav a {
   text-decoration: none;
-  color: hsl(177,100%,45%);
+  color: hsl(177, 100%, 45%);
   font-size: 4rem;
   text-align: center;
   font-family: 'Cabin Sketch', cursive;
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 nav ul {
@@ -65,7 +60,7 @@ nav ul {
 
 nav li {
   border: solid hsl(0, 0%, 0%) 3px;
-  background-color: hsl(0,0%,100%);
+  background-color: hsl(0, 0%, 100%);
   height: 100%;
   width: 100%;
   padding: 1rem 0;
@@ -103,7 +98,7 @@ main h1 {
   padding-bottom: 2.3rem;
 }
 
-#top-nav{
+#top-nav {
   font-size: 2.1rem;
   font-family: 'Cabin Sketch', cursive;
   grid-column: 2/end;
@@ -130,15 +125,11 @@ main h1 {
 #start {
   font-size: 4rem;
   font-family: 'Cabin Sketch', cursive;
-  background-color: hsl(177,100%,45%);
+  background-color: hsl(177, 100%, 45%);
   border: solid black 3px;
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   border-radius: 20%;
-  color: hsl(0,0%,100%);
+  color: hsl(0, 0%, 100%);
   height: 22%;
   width: 65%;
 }
@@ -181,7 +172,6 @@ main h1 {
   cursor: wait;
 }
 
-
 .enhanced {
   width: 60%;
   height: 100%;
@@ -194,20 +184,16 @@ main h1 {
 .enhanced h2 {
   font-size: 3rem;
   font-family: 'Cabin Sketch', cursive;
-  color: hsl(177,100%,45%);
+  color: hsl(177, 100%, 45%);
 }
 
-#enhanced{
-  background-color: hsl(177,100%,45%);
-  color: hsl(0,0%,100%);
+#enhanced {
+  background-color: hsl(177, 100%, 45%);
+  color: hsl(0, 0%, 100%);
   font-size: 2rem;
   border: solid black 3px;
   font-family: 'Cabin Sketch', cursive;
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   width: 40%;
   text-align: center;
   margin-top: 2rem;
@@ -226,7 +212,7 @@ main h1 {
 }
 
 .bottom-buttons div {
-  background-color: hsl(177,100%,45%);
+  background-color: hsl(177, 100%, 45%);
   border: solid black 3px;
   width: 40%;
   text-align: center;
@@ -248,12 +234,8 @@ main h1 {
   font-size: 2.5rem;
   font-family: 'Cabin Sketch', cursive;
   text-align: center;
-  color: hsl(0,0%,100%);
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  color: hsl(0, 0%, 100%);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .form, .favorites, .form-suggest {
@@ -265,13 +247,13 @@ main h1 {
   align-items: center;
 }
 
-.form h3, .favorites h3 , .form-suggest h3{
+.form h3, .favorites h3, .form-suggest h3 {
   font-size: 4rem;
   font-family: 'Cabin Sketch', cursive;
   margin-bottom: 4rem;
 }
 
-.form form , .form-suggest form{
+.form form, .form-suggest form {
   width: 65%;
   font-size: 3rem;
   display: flex;
@@ -279,7 +261,7 @@ main h1 {
   text-align: left;
 }
 
-.form label, .form-suggest label{
+.form label, .form-suggest label {
   margin: 1rem 0rem;
 }
 
@@ -291,23 +273,19 @@ main h1 {
 .form select {
   width: 100;
   font-size: 2.3rem;
-  background-color: hsl(177,100%,45%);
+  background-color: hsl(177, 100%, 45%);
   border: solid black 3px;
   padding: 1rem;
-  color: hsl(0,0%,100%);
+  color: hsl(0, 0%, 100%);
 }
 
-.form input , .form-suggest input{
+.form input, .form-suggest input {
   font-size: 3rem;
   font-family: 'Cabin Sketch', cursive;
   text-align: center;
-  color: hsl(0,0%,100%);
-  background-color: hsl(177,100%,45%);
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(177, 100%, 45%);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   border: solid black 3px;
   border-radius: 20%;
   margin-top: 5rem;
@@ -329,7 +307,7 @@ main h1 {
   align-items: center;
 }
 
-.saved-settings h5{
+.saved-settings h5 {
   font-size: 3rem;
   font-family: 'Cabin Sketch', cursive;
 }
@@ -359,7 +337,6 @@ main h1 {
   align-items: center;
 }
 
-
 #start-advanced-img {
   width: 60%;
 }
@@ -367,7 +344,7 @@ main h1 {
 .favorites-list {
   width: 80%;
   height: 70%;
-  background-color: hsl(177,100%,45%);
+  background-color: hsl(177, 100%, 45%);
   border: solid black 3px;
   display: flex;
   flex-flow: column nowrap;
@@ -391,8 +368,8 @@ main h1 {
 }
 
 #reset {
-  background-color: hsl(177,100%,45%);
-  color: hsl(0,0%,100%);
+  background-color: hsl(177, 100%, 45%);
+  color: hsl(0, 0%, 100%);
   font-size: 2rem;
   border: solid black 3px;
   width: 40%;
@@ -406,7 +383,7 @@ main h1 {
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
 #response {
@@ -419,205 +396,167 @@ main h1 {
   border: solid black 3px;
 }
 
-
 @media only screen and (min-width: 1025px) {
-    body{
-      width: 100vw;
-      height: 100vh;
-    }
-
-    #logo {
-      grid-column: 2/3;
-      grid-row: 2/3;
-      width: 30%;
-    }
-
-    header nav {
-      height: 60%;
-    }
-
-    nav li {
-      margin-top: 0rem;
-    }
-
-    main {
-      background-size: cover;
-      margin-top: 0rem;
-    }
-    main h1 {
-      padding-bottom: 0rem;
-      padding-top: 2.5rem;
-    }
-
-    #top-nav{
-      padding-bottom: 0rem;
-      padding-top: 2.5rem;
-    }
-    .main-question-area, .advanced-question-area, .form {
-      display: grid;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 30% 70%;
-    }
-
-    #start {
-      grid-column: 1/end;
-      grid-row: 1/2;
-      align-self: end;
-      justify-self: center;
-      width: 40%;
-      height: 60%;
-      font-size: 2rem;
-    }
-
-    .question-section {
-      grid-column: 1/3;
-      grid-row: 2/end;
-      align-self: center;
-      justify-self: center;
-      margin-bottom: 4rem;
-    }
-
-    #question {
-      font-size: 3rem;
-    }
-
-    .enhanced {
-      width: 100%;
-      grid-column: 3/end;
-      grid-row: 2/end;
-      justify-content: center;
-      margin-bottom: 4rem;
-    }
-
-    .enhanced h2 {
-      font-size: 2rem;
-    }
-
-    #enhanced{
-      font-size: 1.5rem;
-      width: 50%;
-    }
-
-    .bottom-buttons div {
-      width: 30%;
-    }
-
-    .bottom-buttons a {
-      font-size: 2rem;
-    }
-
-    .form, .favorites {
-      grid-row: 2/5;
-      margin-top: 2rem;
-      height: 85%;
-    }
-
-    .favorites {
-      margin-top: 3rem;
-    }
-
-    .form form {
-      grid-column: 1/3;
-      grid-row: 1/end;
-      align-self: center;
-      justify-self: center;
-      margin-top: 2rem;
-      font-size: 2rem;
-    }
-
-
-    .form h3, .favorites h3 {
-      font-size: 2.5rem;
-      margin-bottom: 0rem;
-    }
-
-    .form h3 {
-      grid-column: 1/3;
-      grid-row: 1/2;
-      align-self: center;
-      justify-self: center;
-    }
-
-    #sub-label {
-      font-size: 1rem;
-    }
-
-    .form label {
-      font-size: 1.5rem;
-    }
-
-    .form select {
-      font-size: 1rem;
-      height: 3rem;
-    }
-
-    .form input {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      width: 50%;
-    }
-
-    .saved-settings {
-      grid-column: 2/end;
-      grid-row: 4/5;
-      align-self: center;
-      justify-self: flex-end;
-      margin-right: 4rem;
-    }
-
-    .saved-settings h5{
-      font-size: 2rem;
-    }
-
-    .saved-settings p {
-      font-size: 1rem;
-    }
-
-    #change-settings {
-      font-size: 1rem;
-    }
-
-    .start-advanced {
-      grid-column: 3/end;
-      grid-row: 2/end;
-      align-self: start;
-      justify-self: center;
-    }
-
-    #start-advanced-img {
-      width: 100%;
-    }
-
-    .favorites-list li {
-      font-size: 1.5rem;
-    }
-
-    .remove {
-      margin-left: 2rem;
-      font-size: 1.5rem;
-    }
-
-    .form-suggest h3 {
-      display: none;
-    }
-
-    .form-suggest label {
-      font-size: 1.5rem;
-    }
-
-    .form-suggest textarea {
-      font-size: 1.5rem;
-    }
-
-    .form-suggest input {
-      margin-top: .5rem;
-    }
-
-    #google-search input {
-      font-size: 1rem;
-    }
-
-    .hidden {
-      display: none;
-    }
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  #logo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 30%;
+  }
+  header nav {
+    height: 60%;
+  }
+  nav li {
+    margin-top: 0rem;
+  }
+  main {
+    background-size: cover;
+    margin-top: 0rem;
+  }
+  main h1 {
+    padding-bottom: 0rem;
+    padding-top: 2.5rem;
+  }
+  #top-nav {
+    padding-bottom: 0rem;
+    padding-top: 2.5rem;
+  }
+  .main-question-area, .advanced-question-area, .form {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 70%;
+  }
+  #start {
+    grid-column: 1/end;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: center;
+    width: 40%;
+    height: 60%;
+    font-size: 2rem;
+  }
+  .question-section {
+    grid-column: 1/3;
+    grid-row: 2/end;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+  #question {
+    font-size: 3rem;
+  }
+  .enhanced {
+    width: 100%;
+    grid-column: 3/end;
+    grid-row: 2/end;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .enhanced h2 {
+    font-size: 2rem;
+  }
+  #enhanced {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  .bottom-buttons div {
+    width: 30%;
+  }
+  .bottom-buttons a {
+    font-size: 2rem;
+  }
+  .form, .favorites {
+    grid-row: 2/5;
+    margin-top: 2rem;
+    height: 85%;
+  }
+  .favorites {
+    margin-top: 3rem;
+  }
+  .form form {
+    grid-column: 1/3;
+    grid-row: 1/end;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .form h3, .favorites h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+  }
+  .form h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+  }
+  #sub-label {
+    font-size: 1rem;
+  }
+  .form label {
+    font-size: 1.5rem;
+  }
+  .form select {
+    font-size: 1rem;
+    height: 3rem;
+  }
+  .form input {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 50%;
+  }
+  .saved-settings {
+    grid-column: 2/end;
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 4rem;
+  }
+  .saved-settings h5 {
+    font-size: 2rem;
+  }
+  .saved-settings p {
+    font-size: 1rem;
+  }
+  #change-settings {
+    font-size: 1rem;
+  }
+  .start-advanced {
+    grid-column: 3/end;
+    grid-row: 2/end;
+    align-self: start;
+    justify-self: center;
+  }
+  #start-advanced-img {
+    width: 100%;
+  }
+  .favorites-list li {
+    font-size: 1.5rem;
+  }
+  .remove {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .form-suggest h3 {
+    display: none;
+  }
+  .form-suggest label {
+    font-size: 1.5rem;
+  }
+  .form-suggest textarea {
+    font-size: 1.5rem;
+  }
+  .form-suggest input {
+    margin-top: .5rem;
+  }
+  #google-search input {
+    font-size: 1rem;
+  }
+  .hidden {
+    display: none;
+  }
 }
