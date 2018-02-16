@@ -6,26 +6,28 @@ https://convo-pro.firebaseapp.com/
 # Project description
 ## Random Question Generator
 Start conversations with a quick "conversating" button that automatically generates a random question.
-
+![quick](https://user-images.githubusercontent.com/32685092/36321745-e5ac8e88-1318-11e8-9045-d5aafc6aa4cb.gif)
 
 ## Advanced Settings:
 Toggle between intimacy levels and turn on nsfw questions.
+![advanced](https://user-images.githubusercontent.com/32685092/36321757-f06dcfda-1318-11e8-9644-8c9bf7af4b56.gif)
 
 ## Favorite Questions:
 Save questions for later in your favorite questions.
-
+![favorite](https://user-images.githubusercontent.com/32685092/36321766-f70dda6a-1318-11e8-8a99-82b71b086dd5.gif)
 
 ## Suggest a Question:
 Suggest a question to be added to the convo-pro server.
+![suggest](https://user-images.githubusercontent.com/32685092/36321774-fe7632d4-1318-11e8-9f83-a24348af9e77.gif)
 
 # Installation
 After forking and cloning this repo:
 ```
 cd convo-pro-front
-npm install
+http-server
 
 ```
-This command will move you into the app directory and install all the necessary dependencies.
+This command will move you into the app directory and open up a server to see the app locally.
 
 # API Integration
 For more information about the express powered database please see the following links:
