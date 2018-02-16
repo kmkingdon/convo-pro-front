@@ -1,32 +1,51 @@
-## Galvanize Web App
+# Welcome to Convo-Pro:
+Convo Pro is a random question generator that enhances conversations with abilities to toggle question intimacy level and a fun nsfw version.
 
-For this project, you will build a light application that reads and writes data, has unit tests for functions, and integrates with an API. The topic is up to you, so pick a project that speaks to your interests.
+https://convo-pro.firebaseapp.com/
 
-### Instructions
+# Project description
+## Random Question Generator
+Start conversations with a quick "conversating" button that automatically generates a random question.
 
-#### Back-end
 
-Build an API that reads and writes data.
+## Advanced Settings:
+Toggle between intimacy levels and turn on nsfw questions.
 
-* You should have at least 2 collections of items. For example, if you make a school app, you should at a minimum have something like `students` and `classes`.
-* You need to write some data transformation that combines the two objects. For example, combine classes and students together into one data structure.
-* Your data transformations should have unit tests
-* Deploy your back-end
+## Favorite Questions:
+Save questions for later in your favorite questions.
 
-#### Front-end
 
-Build a client that reads and writes data from your API.
+## Suggest a Question:
+Suggest a question to be added to the convo-pro server.
 
-* You should have a brochure page that has information about what your app does and who it's for.
-* You should have a form that writes data to your API
-* You should read some data from your API that is dynamically added to the page
-* Deploy your front-end
+# Installation
+After forking and cloning this repo:
+```
+cd convo-pro-front
+npm install
 
----
+```
+This command will move you into the app directory and install all the necessary dependencies.
 
-### Submission
+# API Integration
+For more information about the express powered database please see the following links:
 
-Add a link to your front-end code https://github.com/kmkingdon/galvanize-web-app,
-your back-end code https://github.com/kmkingdon/convo-pro-server,
-and your deployed site
-https://convo-pro.firebaseapp.com
+Deployed Database:
+Questions only: https://convo-pro-server.herokuapp.com/questions
+
+Advanced Search Criteria only: https://convo-pro-server.herokuapp.com/advanced
+
+Complete Merged Data Set with questions and advanced search criteria: https://convo-pro-server.herokuapp.com/mergeData
+
+Database Github:
+https://github.com/kmkingdon/convo-pro-server
+
+# License
+MIT License Copyright (c) 2018 Kevin Kingdon
+
+# Author contact
+
+|<img src="https://user-images.githubusercontent.com/32685092/35702971-d0b4e966-0757-11e8-8098-c2819dff5e58.png" width="100"> | Kevin Kingdon                    |
+| ------------- | ------------- |
+| Website  | [kmkingdon.info](https://kmkingdon.info) |
+| LinkIn   | [/in/kevin-kingdon/](https://www.linkedin.com/in/kevin-kingdon/) |
